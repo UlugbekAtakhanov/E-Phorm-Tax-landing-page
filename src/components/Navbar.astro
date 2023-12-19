@@ -1,0 +1,16 @@
+---
+import Button from "./button.astro";
+import logo from "../assets/images/e-phorm-dark-logo.png";
+import { Image } from "astro:assets";
+---
+
+<nav class="container flex py-4 absolute top-0">
+    <Image src={logo} alt="logo" class="w-32 h-10" />
+    <ul class="text-sm font-semibold flex gap-6 items-center ml-auto">
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Resource</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#"><Button>Free Trial</Button></a></li>
+    </ul>
+</nav>

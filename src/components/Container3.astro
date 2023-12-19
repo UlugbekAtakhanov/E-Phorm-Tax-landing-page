@@ -1,0 +1,130 @@
+---
+import { Image } from "astro:assets";
+import img1 from "../assets/images/client-invite-image.jpg";
+import img2 from "../assets/images/answers-question-designed-image.jpg";
+import img3 from "../assets/images/professional-review-and-filling-image.jpg";
+import img4 from "../assets/images/upload-submit-client-documents-image.jpg";
+import Button from "./button.astro";
+---
+
+<div class="card min-h-[550px] py-20 relative">
+    <h1 class="text-5xl font-bold text-center mb-12 relative z-10">How It Works?</h1>
+
+    <!-- squares -->
+    <div class="square absolute inset-0">
+        <div class="h-full bg-gradient-to-b from-white from-[30%] to-transparent"></div>
+    </div>
+
+    <div class="relative flex items-center container gap-4 justify-center">
+        <!-- card1 -->
+        <div class="text-center relative whitespace-nowrap cursor-pointer">
+            <div class="relative">
+                <Image src={img1} alt="logo" class="w-[130px] h-[130px] rounded-full object-cover object-center relative z-10" />
+                <div class="border-2 border-dashed border-black absolute -inset-2 z-0 rounded-full rotate"></div>
+            </div>
+            <div class="absolute top-full left-1/2 -translate-x-1/2 mt-3">
+                <p class="text-xs text-slate-500 font-semibold">Step 1</p>
+                <h1 class="font-bold">Client Invite</h1>
+            </div>
+        </div>
+        <div class="h-0.5 w-28 bg-black rounded-full"></div>
+
+        <!-- card2 -->
+        <div class="text-center relative group cursor-pointer">
+            <div class="relative">
+                <Image src={img2} alt="logo" class="w-[130px] h-[130px] rounded-full object-cover object-center relative z-10" />
+                <div class="group-hover:block hidden border-2 border-dashed border-black absolute -inset-2 z-0 rounded-full rotate"></div>
+            </div>
+            <div class="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[120%] text-sm">
+                <p class="text-xs text-slate-500 font-semibold">Step 2</p>
+                <h1 class="font-bold">Client answers question designed by professional</h1>
+            </div>
+        </div>
+        <div class="h-0.5 w-28 bg-black rounded-full"></div>
+
+        <!-- card3 -->
+        <div class="text-center relative group cursor-pointer">
+            <div class="relative">
+                <Image src={img3} alt="logo" class="w-[130px] h-[130px] rounded-full object-cover object-center relative z-10" />
+                <div class="group-hover:block hidden border-2 border-dashed border-black absolute -inset-2 z-0 rounded-full rotate"></div>
+            </div>
+            <div class="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[120%] text-sm">
+                <p class="text-xs text-slate-500 font-semibold">Step 3</p>
+                <h1 class="font-bold">Upload & submit client documents</h1>
+            </div>
+        </div>
+        <div class="h-0.5 w-28 bg-black rounded-full"></div>
+
+        <!-- card4 -->
+        <div class="text-center relative group cursor-pointer">
+            <div class="relative">
+                <Image src={img4} alt="logo" class="w-[130px] h-[130px] rounded-full object-cover object-center relative z-10" />
+                <div class="group-hover:block hidden border-2 border-dashed border-black absolute -inset-2 z-0 rounded-full rotate"></div>
+            </div>
+            <div class="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[120%] text-sm">
+                <p class="text-xs text-slate-500 font-semibold">Step 4</p>
+                <h1 class="font-bold">Ready for professional’s review and filling</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="container flex justify-center items-start gap-4 relative">
+        <div class="p-8 shadow flex flex-col items-center rounded-lg paper relative">
+            <Image src={img1} alt="logo" class="" />
+            <h1 class="text-xl font-bold text-center mb-12">Client Invite</h1>
+        </div>
+        <div class="p-8 shadow flex flex-col items-center rounded-lg bg-gradient-to-b from-white to-transparent relative">
+            <Image src={img2} alt="logo" class="" />
+            <h1 class="text-xl font-bold text-center mb-12">Client answers question designed by professional</h1>
+        </div>
+        <div class="p-8 shadow flex flex-col items-center rounded-lg paper">
+            <Image src={img3} alt="logo" class="" />
+            <h1 class="text-xl font-bold text-center mb-12">Upload & submit client documents</h1>
+        </div>
+        <div class="p-8 shadow flex flex-col items-center rounded-lg paper">
+            <Image src={img4} alt="logo" class="" />
+            <h1 class="text-xl font-bold text-center mb-12">Ready for professional’s review and filling</h1>
+        </div>
+    </div> -->
+</div>
+
+<style>
+    .card {
+        background: url(../assets/images/6.jpg) center no-repeat;
+        background-position: bottom;
+        background-size: contain;
+    }
+    .paper {
+        background: linear-gradient(
+            to bottom,
+            hsla(0, 0%, 100%, 0.08) 0%,
+            hsla(0, 0%, 100%, 0.079) 8.1%,
+            hsla(0, 0%, 100%, 0.078) 15.5%,
+            hsla(0, 0%, 100%, 0.075) 22.5%,
+            hsla(0, 0%, 100%, 0.071) 29%,
+            hsla(0, 0%, 100%, 0.067) 35.3%,
+            hsla(0, 0%, 100%, 0.062) 41.2%,
+            hsla(0, 0%, 100%, 0.057) 47.1%,
+            hsla(0, 0%, 100%, 0.053) 52.9%,
+            hsla(0, 0%, 100%, 0.048) 58.8%,
+            hsla(0, 0%, 100%, 0.043) 64.7%,
+            hsla(0, 0%, 100%, 0.039) 71%,
+            hsla(0, 0%, 100%, 0.035) 77.5%,
+            hsla(0, 0%, 100%, 0.032) 84.5%,
+            hsla(0, 0%, 100%, 0.031) 91.9%,
+            hsla(0, 0%, 100%, 0.03) 100%
+        );
+    }
+
+    .rotate {
+        animation: rotate;
+        animation-iteration-count: infinite;
+        animation-duration: 4s;
+    }
+
+    @keyframes rotate {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+</style>
