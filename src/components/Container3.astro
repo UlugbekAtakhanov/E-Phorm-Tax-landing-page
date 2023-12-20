@@ -4,17 +4,20 @@ import img1 from "../assets/images/client-invite-image.jpg";
 import img2 from "../assets/images/answers-question-designed-image.jpg";
 import img3 from "../assets/images/professional-review-and-filling-image.jpg";
 import img4 from "../assets/images/upload-submit-client-documents-image.jpg";
+import t1 from "../assets/images/t1-clients-image.png";
+
 import Button from "./button.astro";
 ---
 
-<div class="card min-h-[550px] py-20 relative">
+<div class="card py-20 relative">
     <h1 class="text-5xl font-bold text-center mb-12 relative z-10">How It Works?</h1>
 
     <!-- squares -->
     <div class="square absolute inset-0">
-        <div class="h-full bg-gradient-to-b from-white from-[30%] to-transparent"></div>
+        <div class="h-full bg-gradient-to-b from-white from-[0%] to-transparent"></div>
     </div>
 
+    <!-- circle cards -->
     <div class="relative flex items-center container gap-4 justify-center">
         <!-- card1 -->
         <div class="text-center relative whitespace-nowrap cursor-pointer">
@@ -68,31 +71,27 @@ import Button from "./button.astro";
         </div>
     </div>
 
-    <!-- <div class="container flex justify-center items-start gap-4 relative">
-        <div class="p-8 shadow flex flex-col items-center rounded-lg paper relative">
-            <Image src={img1} alt="logo" class="" />
-            <h1 class="text-xl font-bold text-center mb-12">Client Invite</h1>
+    <!-- t1 img -->
+    <div class="container flex pt-48 gap-4 items-start relative">
+        <div>
+            <h1 class="text-4xl font-bold relative z-10 balance my-6">T1 Client’s Document Requests are fully automated.</h1>
+            <p class="text-lg mb-3">
+                <span class="text-blue font-semibold">e-Phorm</span> takes the tedious tasks out of your tax workflow. Get organized and eliminate
+                inefficiencies during tax season.
+            </p>
+            <Button>Free trial</Button>
         </div>
-        <div class="p-8 shadow flex flex-col items-center rounded-lg bg-gradient-to-b from-white to-transparent relative">
-            <Image src={img2} alt="logo" class="" />
-            <h1 class="text-xl font-bold text-center mb-12">Client answers question designed by professional</h1>
+        <div>
+            <Image src={t1} alt="logo" class="" />
         </div>
-        <div class="p-8 shadow flex flex-col items-center rounded-lg paper">
-            <Image src={img3} alt="logo" class="" />
-            <h1 class="text-xl font-bold text-center mb-12">Upload & submit client documents</h1>
-        </div>
-        <div class="p-8 shadow flex flex-col items-center rounded-lg paper">
-            <Image src={img4} alt="logo" class="" />
-            <h1 class="text-xl font-bold text-center mb-12">Ready for professional’s review and filling</h1>
-        </div>
-    </div> -->
+    </div>
 </div>
 
 <style>
     .card {
         background: url(../assets/images/6.jpg) center no-repeat;
         background-position: bottom;
-        background-size: contain;
+        background-size: cover;
     }
     .paper {
         background: linear-gradient(

@@ -1,0 +1,105 @@
+---
+import { Image } from "astro:assets";
+import img1 from "../assets/images/tax-prep-image.png";
+import img2 from "../assets/images/comprehensive-image.png";
+import img3 from "../assets/images/save-your-time-img.png";
+import img4 from "../assets/images/scalable-solution-image.png";
+import img5 from "../assets/images/cloud-storage-image.png";
+import img6 from "../assets/images/progress-monitoring-image.png";
+---
+
+<div class="pb-20 card relative">
+    <!-- squares -->
+    <div class="square absolute inset-0">
+        <div class="h-full bg-gradient-to-b from-white from-[0%] to-transparent"></div>
+    </div>
+
+    <h1 class="text-4xl font-bold text-center mb-12 relative">What to expect from <span class="text-blue">e-Phorm</span></h1>
+
+    <!-- cards -->
+    <div class="relative container balance grid grid-cols-[repeat(auto-fit,minmax(400px,1fr))] gap-8 justify-center">
+        <!-- card1 -->
+        <div class="shadow-md bg-sky-200/10 backdrop-blur-sm border p-4 rounded-xl ring-1 ring-offset-2 flex items-center gap-4">
+            <div class="w-20 h-20 p-[0.1875rem] rounded-full ring-1 ring-offset-2 shadow overflow-hidden shrink-0">
+                <Image src={img1} alt="logo" />
+            </div>
+            <div class="">
+                <h1 class="font-bold mb-1">Tax Prep that is painless</h1>
+                <p class="text-xs text-slate-500 font-semibold">
+                    Only when you have all the information necessary to start working on a client’s T1 will you be able to begin. There will be no more
+                    delays due to missing information.
+                </p>
+            </div>
+        </div>
+        <!-- card2 -->
+        <div class="shadow-md bg-sky-200/10 backdrop-blur-sm border p-4 rounded-xl ring-1 ring-offset-2 flex items-center gap-4">
+            <div class="w-20 h-20 p-[0.1875rem] rounded-full ring-1 ring-offset-2 shadow overflow-hidden shrink-0">
+                <Image src={img2} alt="logo" />
+            </div>
+            <div class="">
+                <h1 class="font-bold mb-1">Comprehensive</h1>
+                <p class="text-xs text-slate-500 font-semibold">
+                    We cover all aspects of the T1 workflow so you don’t have to worry about missing a tax credit or deduction.
+                </p>
+            </div>
+        </div>
+        <!-- card3 -->
+        <div class="shadow-md bg-sky-200/10 backdrop-blur-sm border p-4 rounded-xl ring-1 ring-offset-2 flex items-center gap-4">
+            <div class="w-20 h-20 p-[0.1875rem] rounded-full ring-1 ring-offset-2 shadow overflow-hidden shrink-0">
+                <Image src={img3} alt="logo" />
+            </div>
+            <div class="">
+                <h1 class="font-bold mb-1">You can save time</h1>
+                <p class="text-xs text-slate-500 font-semibold">
+                    ePhorm cuts out the back and forth between clients. This helps you save time, not long hours.
+                </p>
+            </div>
+        </div>
+        <!-- card4 -->
+        <div class="shadow-md bg-sky-200/10 backdrop-blur-sm border p-4 rounded-xl ring-1 ring-offset-2 flex items-center gap-4">
+            <div class="w-20 h-20 p-[0.1875rem] rounded-full ring-1 ring-offset-2 shadow overflow-hidden shrink-0">
+                <Image src={img4} alt="logo" />
+            </div>
+            <div class="">
+                <h1 class="font-bold mb-1">Scalable Solution</h1>
+                <p class="text-xs text-slate-500 font-semibold">
+                    No matter how big or small your company is, you can add clients to it as many times as you wish. You have a clear runway from which to
+                    fly.
+                </p>
+            </div>
+        </div>
+        <!-- card5 -->
+        <div class="shadow-md bg-sky-200/10 backdrop-blur-sm border p-4 rounded-xl ring-1 ring-offset-2 flex items-center gap-4">
+            <div class="w-20 h-20 p-[0.1875rem] rounded-full ring-1 ring-offset-2 shadow overflow-hidden shrink-0">
+                <Image src={img5} alt="logo" />
+            </div>
+            <div class="">
+                <h1 class="font-bold mb-1">Unlimited Cloud Storage</h1>
+                <p class="text-xs text-slate-500 font-semibold">
+                    You can store as many T1 files as you like on our cloud, and access them whenever and wherever you want.
+                </p>
+            </div>
+        </div>
+        <!-- card6 -->
+        <div class="shadow-md bg-sky-200/10 backdrop-blur-sm border p-4 rounded-xl ring-1 ring-offset-2 flex items-center gap-4">
+            <div class="w-20 h-20 p-[0.1875rem] rounded-full ring-1 ring-offset-2 shadow overflow-hidden shrink-0">
+                <Image src={img6} alt="logo" />
+            </div>
+            <div class="">
+                <h1 class="font-bold mb-1">Progress Monitoring</h1>
+                <p class="text-xs text-slate-500 font-semibold">
+                    The dashboard of your account gives you a summary T1 KPI’s that will help you stay on track during tax season.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        background: url(../assets/images/6.jpg) center no-repeat;
+        background-position: bottom;
+        background-size: cover;
+    }
+    /* .card-item {} */
+</style>

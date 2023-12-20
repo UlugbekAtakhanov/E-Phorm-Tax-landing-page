@@ -1,0 +1,28 @@
+---
+import { Image } from "astro:assets";
+import img1 from "../assets/images/ssl-image-1024x731.jpg";
+// import img1 from "../assets/images/ssl.png";
+
+const check = (num1) => {
+    if (num1 > 0) {
+        return num1 + 1;
+    } else {
+        return num1;
+    }
+};
+
+const num1 = 5;
+const res = check(num1);
+console.log(res);
+---
+
+<div class="grid grid-cols-2 container items-center">
+    <div>
+        <h1 class="text-3xl font-bold">Security beyond the norm</h1>
+        <p class="mt-4">
+            We go beyond industry standards in information security so that you can safely store tax information for your clients without worrying about
+            data loss or security breaches. It will always be our top priority to protect your data.
+        </p>
+    </div>
+    <Image src={img1} alt="logo" class="" />
+</div>

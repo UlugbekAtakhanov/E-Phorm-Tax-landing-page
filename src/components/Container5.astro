@@ -1,0 +1,67 @@
+---
+import { Image } from "astro:assets";
+import img3 from "../assets/images/auto-documents-image.png";
+import img2 from "../assets/images/client-authorizations-image.png";
+import img1 from "../assets/images/real-time-messaging-image.png";
+import img4 from "../assets/images/team-management-image.png";
+---
+
+<div class="container py-20">
+    <div class="max-w-[650px] mx-auto text-center balance mb-12">
+        <h1 class="text-4xl font-bold mb-2">You can use the same functions with a new execution</h1>
+        <p class="text-lg">We have built our platform to reward you for small tasks.</p>
+    </div>
+    <!-- cards -->
+    <div class="container grid grid-cols-[repeat(auto-fit,minmax(400px,1fr))] gap-12 justify-center">
+        <!-- card1 -->
+        <div class="flex gap-4 items-center justify-end">
+            <div class="text-right shadow-md border p-4 pl-12 rounded-xl card ring-1 ring-offset-2">
+                <h1 class="font-bold">Real-Time Messaging</h1>
+                <p class="text-xs text-slate-500 font-semibold">Chat allows you and your clients to communicate <br /> in real-time.</p>
+            </div>
+            <div class="w-20 h-20 p-[0.1875rem] rounded-full ring-1 ring-offset-2 shadow overflow-hidden shrink-0">
+                <Image src={img1} alt="logo" />
+            </div>
+        </div>
+        <!-- card2 -->
+        <div class="flex gap-4 items-center">
+            <div class="w-20 h-20 p-[0.1875rem] rounded-full shadow overflow-hidden shrink-0 ring-1 ring-offset-2">
+                <Image src={img2} alt="logo" />
+            </div>
+            <div class="balance shadow-md border p-4 rounded-xl card pr-12 ring-1 ring-offset-2">
+                <h1 class="font-bold">Client Authorizations</h1>
+                <p class="text-xs text-slate-500 font-semibold">
+                    We have integrated functions that allow you to manage all your client authorizations from one place.
+                </p>
+            </div>
+        </div>
+        <!-- card3 -->
+        <div class="flex gap-4 items-center justify-end">
+            <div class="text-right shadow-md border p-4 pl-12 rounded-xl card ring-1 ring-offset-2">
+                <h1 class="font-bold">Team Management</h1>
+                <p class="text-xs text-slate-500 font-semibold">You can add unlimited team members to your <br /> account to work remotely.</p>
+            </div>
+            <div class="w-20 h-20 p-[0.1875rem] rounded-full ring-1 ring-offset-2 shadow overflow-hidden shrink-0">
+                <Image src={img4} alt="logo" />
+            </div>
+        </div>
+        <!-- card4 -->
+        <div class="flex gap-4 items-center">
+            <div class="w-20 h-20 p-[0.1875rem] rounded-full shadow overflow-hidden shrink-0 ring-1 ring-offset-2">
+                <Image src={img3} alt="logo" />
+            </div>
+            <div class="balance shadow-md border p-4 rounded-xl card pr-12 ring-1 ring-offset-2">
+                <h1 class="font-bold">Auto Documents</h1>
+                <p class="text-xs text-slate-500 font-semibold">Relax and let us do the rest of the T1’s.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        background: url(../assets/images/3.png);
+        background-position: top center;
+        background-size: cover;
+    }
+</style>
