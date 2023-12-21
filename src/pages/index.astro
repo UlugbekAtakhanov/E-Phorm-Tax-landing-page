@@ -7,6 +7,7 @@ import Container6 from "../components/Container6.astro";
 import Container7 from "../components/Container7.astro";
 import Container8 from "../components/Container8.astro";
 import Container9 from "../components/Container9.astro";
+import Container10 from "../components/Container10.jsx";
 import HomePageLayout from "../layouts/HomePageLayout.astro";
 ---
 
@@ -20,7 +21,9 @@ import HomePageLayout from "../layouts/HomePageLayout.astro";
         <Container7 />
         <Container8 />
         <Container9 />
+        <Container10 client:load />
 
         <div class="h-screen"></div>
     </main>
 </HomePageLayout>
+../components/Container10.jsx
